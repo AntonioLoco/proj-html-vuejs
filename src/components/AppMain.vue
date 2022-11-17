@@ -1,12 +1,17 @@
 <script>
+// Import Compontent
+import AppServices from './AppServices.vue';
 export default{
-    name: "AppMain"
+    name: "AppMain",
+    components: {
+        AppServices
+    }
 }
 </script>
 
 <template>
-    <main>
-        <h1>Sono main</h1>
+    <main> 
+        <AppServices />
     </main>
 </template>
 
