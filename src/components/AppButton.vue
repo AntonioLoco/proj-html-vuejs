@@ -28,6 +28,7 @@ export default{
     padding: .5em 1.5em;
     border-radius: 20px;
     text-align: center;
+    transition: transform .5s ease-out;
 
     &.blue{
         background: $background-btn-blue;
@@ -35,6 +36,10 @@ export default{
 
     &.orange{
         background: $background-btn-orange;
+    }
+
+    &:hover{
+        transform: scale(1.2);
     }
 }
 </style>

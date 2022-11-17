@@ -1,8 +1,12 @@
 <script>
+import AppButton from './AppButton.vue';
 export default{
     name: "AppNavbar",
     props: {
         links: Array
+    },
+    components: {
+        AppButton
     }
 }
 </script>
@@ -14,16 +18,19 @@ export default{
             <a class="navbar-brand">
                 <img src="../assets/img/white-logo-2.png" alt="Logo">
             </a>
-            <ul class="navbar-link mt-3 mt-lg-0">
-                <li v-for="(link,index) in links" :key="index">
-                    <a 
-                        :href="link.href"
-                        :class="{ 'active' : link.active}"
-                    >
-                        {{link.name}}
-                    </a>
-                </li>
-            </ul>
+            <div class="navbar-navigation mt-3 mt-lg-0">
+                <ul class="navbar-link">
+                    <li v-for="(link,index) in links" :key="index">
+                        <a 
+                            :href="link.href"
+                            :class="{ 'active' : link.active}"
+                        >
+                            {{link.name}}
+                        </a>
+                    </li>
+                </ul>
+                <AppButton name="Sign In" href="/signin" color="blue" class="ms-3"/>
+            </div>
         </div>
     </nav>
     <!-- /Navbar -->
@@ -34,7 +41,13 @@ export default{
 @use "../styles/partials/variables" as *;
 
 .navbar{
-    .navbar-link{
+    &-navigation{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &-link{
         display: flex;
         margin: 0;
         li{
