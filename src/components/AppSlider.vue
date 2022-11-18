@@ -35,7 +35,7 @@ export default{
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
 .split-carousel{
-    margin-top: 2em;
+    margin-top: 3em;
     height: 300px!important;
     position: relative;
     

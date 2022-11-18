@@ -22,7 +22,9 @@ export default{
             <h5 class="fs-6 fw-normal">Portfolio</h5>
             <h2>Latest <span class="fw-light">work</span></h2>
         </div>
-        <AppSlider :projects="store.projectList"/>
+        <div class="container-xxl">
+            <AppSlider :projects="store.projectList"/>
+        </div>
     </section>
     <!-- /Portfolio -->
 </template>
