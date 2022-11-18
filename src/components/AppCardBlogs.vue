@@ -18,7 +18,7 @@ export default{
 </script>
 
 <template>
-    <div class="card-blog" :class="{'background-blue' : !post.img}, {'d-flex align-items-end' : post.img}">
+    <div class="card-blog" :class="{'background-blue flex-column justify-content-between' : !post.img}, {'align-items-end' : post.img}">
         <div class="card-blog__text" :class="{'ms_w-70' : post.img}">
             <div class="last-date d-flex align-items-center">
                 <h5 class="fw-light">{{post.message.date}}</h5>
@@ -32,7 +32,7 @@ export default{
                 <p>{{post.message.description}}</p>
             </div>
         </div>
-        <div class="card-blog__button mt-5" :class="{'ms_w-30 justify-content-end' : post.img}">
+        <div class="card-blog__button" :class="{'ms_w-30 justify-content-end' : post.img}">
             <AppButton name="Read More" href="/readmore" color="white" textColor="black"/>
         </div>
         <div class="background-card" v-if="post.img">
@@ -52,6 +52,7 @@ export default{
     overflow: hidden;
     position: relative;
     z-index: 10;
+    display: flex;
 
     &__text{
         color: $text-white;
