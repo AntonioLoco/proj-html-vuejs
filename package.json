@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.2",
-    "vue": "^3.2.41"
+    "vue": "^3.2.41",
+    "vue-split-carousel": "^2.2.3"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.2.0",

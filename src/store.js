@@ -54,5 +54,37 @@ export const store = reactive({
             img: "Group-566",
             description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere obcaecati sapiente repellendus eveniet harum eius cupiditate illum quis impedit unde."
         }
-    ]
+    ],
+    projectList: [
+        {
+            name: "Purinky Products",
+            href: "/purinky",
+            img: "project-dry",
+            description: "Digital Experience"
+        },
+        {
+            name: "Satisfy Poster",
+            href: "/satisfy",
+            img: "project-satisfy",
+            description: "Branding Strategy"
+        },
+        {
+            name: "Basket of Flower",
+            href: "/basket",
+            img: "project-basket",
+            description: "Branding Strategy" 
+        },
+        {
+            name: "Mock Up",
+            href: "/mockup",
+            img: "project-mockup",
+            description: "Digital Experience"
+        },
+        {
+            name: "Satisfy Poster",
+            href: "/satisfy",
+            img: "project-satisfy",
+            description: "Branding Strategy"
+        }
+    ],
 })

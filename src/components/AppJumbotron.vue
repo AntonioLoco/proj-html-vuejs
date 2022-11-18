@@ -22,7 +22,7 @@ export default{
                 <AppButton name="Try it Now" href="/trynow" color="orange" class="me-3"/>
                 <AppButton name="Explore More" href="/exploremore" color="blue"/>
             </div>
-            <div class="col order-0 order-lg-1 mb-3 mb-lg-0">
+            <div class="col order-0 order-lg-1 mb-3 mb-lg-0 d-flex justify-content-center justify-content-lg-end">
                 <img src="../assets/img/header.png" alt="Jumbo photo">
             </div>
         </div>
