@@ -3,13 +3,15 @@
 import AppServices from './AppServices.vue';
 import AppBanner from './AppBanner.vue';
 import AppPortfolio from './AppPortfolio.vue';
+import AppPriceList from './AppPriceList.vue';
 
 export default{
     name: "AppMain",
     components: {
         AppServices,
         AppBanner,
-        AppPortfolio
+        AppPortfolio,
+        AppPriceList
     }
 }
 </script>
@@ -19,6 +21,7 @@ export default{
         <AppServices />
         <AppBanner />
         <AppPortfolio />
+        <AppPriceList />
     </main>
 </template>
 

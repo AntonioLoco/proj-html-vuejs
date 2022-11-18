@@ -87,4 +87,87 @@ export const store = reactive({
             description: "Branding Strategy"
         }
     ],
+    productList: [
+        {
+            name: "Designing",
+            type: "process",
+            price: 40,
+            descriptionList: [
+                {
+                    title: "Creative",
+                    description: "Design Enabled"
+                },
+                {
+                    title: "Vibrant",
+                    description: "Color Usage"
+                },
+                {
+                    title: "Eye",
+                    description: "Catching Design"
+                },
+                {
+                    title: "Extreme",
+                    description: "Typografy"
+                },
+                {
+                    title: "Exceptional",
+                    description: "Design"
+                },
+            ]
+        },
+        {
+            name: "Developing",
+            type: "productt",
+            price: 60,
+            descriptionList: [
+                {
+                    title: "Creative",
+                    description: "Design Enabled"
+                },
+                {
+                    title: "Vibrant",
+                    description: "Color Usage"
+                },
+                {
+                    title: "Eye",
+                    description: "Catching Design"
+                },
+                {
+                    title: "Extreme",
+                    description: "Typografy"
+                },
+                {
+                    title: "Exceptional",
+                    description: "Design"
+                },
+            ]
+        },
+        {
+            name: "Supporting",
+            type: "clients",
+            price: 80,
+            descriptionList: [
+                {
+                    title: "Creative",
+                    description: "Design Enabled"
+                },
+                {
+                    title: "Vibrant",
+                    description: "Color Usage"
+                },
+                {
+                    title: "Eye",
+                    description: "Catching Design"
+                },
+                {
+                    title: "Extreme",
+                    description: "Typografy"
+                },
+                {
+                    title: "Exceptional",
+                    description: "Design"
+                },
+            ]
+        }
+    ]
 })

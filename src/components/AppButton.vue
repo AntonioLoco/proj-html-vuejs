@@ -38,6 +38,11 @@ export default{
         background: $background-btn-orange;
     }
 
+    &.white{
+        background-color: $background-white;
+        color: $text-orange;
+    }
+
     &:hover{
         transform: scale(1.2);
     }
