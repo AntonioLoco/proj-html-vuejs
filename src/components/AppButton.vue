@@ -4,7 +4,8 @@ export default{
     props: {
         name: String,
         href: String,
-        color: String
+        color: String,
+        textColor: String
     }
 }
 </script>
@@ -13,7 +14,7 @@ export default{
     <a
     class="ms_btn"
     :href="href" 
-    :class="color"
+    :class="color, textColor"
     >
         {{name}}
     </a>
@@ -39,8 +40,13 @@ export default{
     }
 
     &.white{
-        background-color: $background-white;
+        background-color: $background-white!important;
         color: $text-orange;
+    }
+
+    &.white.black{
+        background-color: $background-white;
+        color: $text-black;
     }
 
     &:hover{

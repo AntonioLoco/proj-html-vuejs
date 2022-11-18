@@ -4,6 +4,7 @@ import AppServices from './AppServices.vue';
 import AppBanner from './AppBanner.vue';
 import AppPortfolio from './AppPortfolio.vue';
 import AppPriceList from './AppPriceList.vue';
+import AppBlog from './AppBlog.vue';
 
 export default{
     name: "AppMain",
@@ -11,7 +12,8 @@ export default{
         AppServices,
         AppBanner,
         AppPortfolio,
-        AppPriceList
+        AppPriceList,
+        AppBlog
     }
 }
 </script>
@@ -22,6 +24,7 @@ export default{
         <AppBanner />
         <AppPortfolio />
         <AppPriceList />
+        <AppBlog />
     </main>
 </template>
 

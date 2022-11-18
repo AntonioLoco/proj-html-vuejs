@@ -169,5 +169,34 @@ export const store = reactive({
                 },
             ]
         }
+    ],
+    blogLists: [
+        {
+            img: "comment",
+            name: "Paul",
+            message: {
+                date: "April 21, 2019",
+                title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed nemo rerum quae quidem enim commodi voluptatum. Laudantium expedita exercitationem blanditiis?"
+            }
+        },
+        {
+            img: "",
+            name: "Paul",
+            message: {
+                date: "April 21, 2019",
+                title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed nemo rerum quae quidem enim commodi voluptatum. Laudantium expedita exercitationem blanditiis?"
+            }
+        },
+        {
+            img: "",
+            name: "Paul",
+            message: {
+                date: "April 21, 2019",
+                title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed nemo rerum quae quidem enim commodi voluptatum. Laudantium expedita exercitationem blanditiis?"
+            }
+        }
     ]
 })

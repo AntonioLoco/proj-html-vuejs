@@ -56,7 +56,7 @@ export default{
 @use "../styles/partials/variables" as *;
 
 section{
-    background-color: $background-white;
+    background-color: $background-light-grey;
     .container{
         h5{
             color: $text-orange;
