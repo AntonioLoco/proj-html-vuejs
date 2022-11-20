@@ -1,11 +1,13 @@
 <script>
 import AppSlider from './AppSlider.vue';
+import AppTitleSection from './AppTitleSection.vue';
 import { store } from '../store';
 
 export default{
     name: "AppPortfolio",
     components: {
-        AppSlider
+        AppSlider,
+        AppTitleSection
     },
     data(){
         return{
@@ -19,8 +21,11 @@ export default{
     <!-- Portfolio -->
     <section>
         <div class="container pt-5">
-            <h5 class="fs-6 fw-normal">Portfolio</h5>
-            <h2>Latest <span class="fw-light">work</span></h2>
+            <AppTitleSection 
+                section="Portfolio"
+                title="Latest work"
+                color="black"
+            />
         </div>
         <div class="container-xxl">
             <AppSlider :projects="store.projectList"/>
@@ -36,10 +41,5 @@ section{
     overflow-x: hidden;
     padding-bottom: 5em;
     background-color: $background-light-grey;
-    .container{
-        h5{
-            color: $text-orange
-        }
-    }
 }
 </style>

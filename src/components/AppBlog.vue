@@ -1,12 +1,14 @@
 <script>
 import AppCardBlogs from './AppCardBlogs.vue';
+import AppTitleSection from './AppTitleSection.vue';
 
 import { store } from '../store';
 
 export default{
     name: "AppBlog",
     components: {
-        AppCardBlogs
+        AppCardBlogs,
+        AppTitleSection
     },
     data(){
         return{
@@ -20,11 +22,14 @@ export default{
     <!-- Section Blog Post -->
     <section>
         <div class="container py-5">
-            <div class="title-section text-center">
-                    <h5 class="fs-6 fw-normal">Blog</h5>
-                    <h2 class="fs-1 fw-bold">Latest <span class="fw-normal">Posts</span></h2>
-                    <h4 class="fs-5 fw-light">When, while the lovely valley teems with vapour around meand the</h4>
-            </div>
+            <AppTitleSection 
+                section="Blog"
+                title="Latest Posts"
+                paragraph="When, while the lovely valley teems with vapour around meand the"
+                color="black"
+                class="text-center"
+            />
+
             <div class="row py-5">
                 <div
                     v-for="(post,index) in store.blogLists"
@@ -44,10 +49,5 @@ export default{
 
 section{
     background-color: $background-light-grey;
-    .title-section{
-        h5{
-            color: $text-orange;
-        }
-    }
 }
 </style>
