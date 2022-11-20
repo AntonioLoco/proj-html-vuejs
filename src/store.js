@@ -198,5 +198,28 @@ export const store = reactive({
                 description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed nemo rerum quae quidem enim commodi voluptatum. Laudantium expedita exercitationem blanditiis?"
             }
         }
+    ],
+    testimonialList: [
+        {
+            fullName: "Michkel Angel",
+            employment: "Marketing Managment",
+            urlImg: "michkel-testimonial",
+            rating: 3,
+            comment: "When, while lovely valley teems with vapour around meand meridian sun strikes the upper impenetrable foliage of my trees, and but a thousand "
+        },
+        {
+            fullName: "Fabiola Angel",
+            employment: "Marketing Managment",
+            urlImg: "fabiola-testimonial",
+            rating: 3,
+            comment: "When, while lovely valley teems with vapour around meand meridian sun strikes the upper impenetrable foliage of my trees, and but a thousand "
+        },
+        {
+            fullName: "Federica Angel",
+            employment: "Marketing Managment",
+            urlImg: "federica-testimonial",
+            rating: 3,
+            comment: "When, while lovely valley teems with vapour around meand meridian sun strikes the upper impenetrable foliage of my trees, and but a thousand "
+        }
     ]
 })

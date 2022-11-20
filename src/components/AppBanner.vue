@@ -13,7 +13,7 @@ export default{
 <template>
     <!-- Banner -->
     <section>
-        <div class="container">
+        <div class="container py-5">
             <div class="row row-cols-1 row-cols-lg-2 align-items-center pb-5">
                 <div class="col mb-3 mb-lg-0 d-flex justify-content-center justify-content-lg-start">
                     <img src="../assets/img/men-data.png" alt="Banner photo">
@@ -40,8 +40,6 @@ section{
     color: $text-white;
 
     .container{
-        padding: 4em 0;
-    
         img{
             max-width: 70%;
         }
