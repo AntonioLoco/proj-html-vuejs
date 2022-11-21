@@ -21,13 +21,13 @@ export default{
 <template>
     <split-carousel>
         <split-carousel-item v-for="(project,index) in projects" :key="index">
-            <div :href="project.href" class="project-card"> 
+            <a :href="project.href" class="project-card"> 
                 <img :src="getImage(`../assets/img/${project.img}.jpg`)" :alt="project.name">
                 <div class="project-card-description">
                     <h3>{{project.name}}</h3>
                     <p>{{project.description}}</p>
                 </div>
-            </div>
+            </a>
         </split-carousel-item>
     </split-carousel>
 </template>
@@ -38,12 +38,14 @@ export default{
     margin-top: 3em;
     height: 300px!important;
     position: relative;
+    cursor: pointer;
     
     &__item{
-        width: 335px!important;
+        width: 345px!important;
         padding: 0 2em;
 
         .project-card{
+            display: block;
             width: 100%;
             background-color: $background-white;
             border-radius: 20px;
@@ -74,6 +76,7 @@ export default{
             &:hover{
                     background: $background-btn-orange;
                     color: $text-white;
+                    transition: all .2s ease-in-out;
             }
         }
     }

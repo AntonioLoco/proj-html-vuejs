@@ -20,7 +20,7 @@ export default{
 
 <template>
     <!-- Section Blog Post -->
-    <section>
+    <section id="blog">
         <div class="container py-5">
             <AppTitleSection 
                 section="Blog"
@@ -30,7 +30,7 @@ export default{
                 class="text-center"
             />
 
-            <div class="row py-5">
+            <div class="row pt-5">
                 <div
                     v-for="(post,index) in store.blogLists"
                     :key="index"

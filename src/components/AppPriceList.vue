@@ -21,7 +21,7 @@ export default{
 
 <template>
     <!-- Section Price list -->
-    <section>
+    <section id="about">
         <div class="container py-5">
             <AppTitleSection 
                 section="Price List"

@@ -24,7 +24,7 @@ export default{
 
 <template>
     <!-- Section our services -->
-    <section>
+    <section id="services">
         <div class="container text-center py-5">
             <AppTitleSection 
                 section="Our Services" 

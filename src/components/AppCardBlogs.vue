@@ -53,6 +53,7 @@ export default{
     position: relative;
     z-index: 10;
     display: flex;
+    box-shadow: 6px 5px 21px 0px rgba(0,0,0,0.48);
 
     &__text{
         color: $text-white;

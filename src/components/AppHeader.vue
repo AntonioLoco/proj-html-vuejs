@@ -26,7 +26,7 @@ export default{
 </script>
 
 <template>
-    <header>
+    <header id="home">
         <div class="container">
             <AppNavbar :links="store.navigationLinks" :isOpen="store.menuIsOpen" @openMenu="openMenu"/>
             <AppJumbotron />

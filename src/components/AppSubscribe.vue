@@ -10,7 +10,7 @@ export default{
 
 <template>
     <!-- Section Subscribe -->
-    <section>
+    <section id="contact">
         <div class="container">
             <div class="form-subscribe row align-items-center">
                 <div class="col-12 col-lg-7">

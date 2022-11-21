@@ -19,7 +19,7 @@ export default{
 
 <template>
     <!-- Portfolio -->
-    <section>
+    <section id="portfolio">
         <div class="container pt-5">
             <AppTitleSection 
                 section="Portfolio"
