@@ -19,7 +19,7 @@ export default{
 <template>
 <!-- Section Advertising -->
 <section>
-    <div class="container py-3">
+    <div class="container pt-5">
         <div class="row row-cols-1 row-cols-lg-5">
             <div 
                 class="col mb-5 mb-lg-0"

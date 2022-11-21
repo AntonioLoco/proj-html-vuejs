@@ -1,14 +1,24 @@
 <script>
+import AppFooterLinks from './AppFooterLinks.vue';
+
 export default{
-    name: "AppFooter"
+    name: "AppFooter",
+    components: {
+        AppFooterLinks
+    }
 }
 </script>
 
 <template>
     <footer>
-        <h1>Sono footer</h1>
+        <AppFooterLinks />
     </footer>
 </template>
 
 <style lang="scss" scoped>
+@use "../styles/partials/variables" as *;
+
+footer{
+    background: $background-header;
+}
 </style>

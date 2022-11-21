@@ -21,7 +21,7 @@ export default{
 <template>
     <!-- Section Testimonials -->
     <section>
-        <div class="container py-5">
+        <div class="container pt-5">
             <AppTitleSection 
                 section="Testimonial"
                 title="What People Say"

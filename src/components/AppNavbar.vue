@@ -53,7 +53,6 @@ export default{
         li{
             margin: 0 1em;
 
-            a:hover,
             a.active{
                 color: $text-orange;
             }

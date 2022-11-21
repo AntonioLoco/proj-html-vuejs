@@ -30,6 +30,10 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: $text-orange;
+}
+
 header{
     background: $background-header;
     color: $text-white;

@@ -243,5 +243,49 @@ export const store = reactive({
             name: "Jack Roller",
             imgUrl: "client-5"
         }
+    ],
+    footerLinks: [
+        {
+            title: "Resources",
+            links: [
+                {
+                    name: "Art Design",
+                    href: "/artdesign"
+                },
+                {
+                    name: "Computer",
+                    href: "/computer"
+                },
+                {
+                    name: "IT News",
+                    href: "/itnews"
+                },
+                {
+                    name: "Networking",
+                    href: "/networking"
+                },
+                {
+                    name: "web Security",
+                    href: "/websicurity"
+                }
+            ]
+        },
+        {
+            title: "Contact Us",
+            links: [
+                {
+                    name: "Address",
+                    description: "Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, Tx 76051"
+                },
+                {
+                    name: "Phone",
+                    description: "+99 (0) 101 0000 888"
+                },
+                {
+                    name: "Email",
+                    description: "info@yourdimain.com"
+                }
+            ]
+        }
     ]
 })
