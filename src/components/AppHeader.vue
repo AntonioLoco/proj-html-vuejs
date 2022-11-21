@@ -16,6 +16,11 @@ export default{
         return{
             store
         }
+    },
+    methods: {
+        openMenu(){
+            this.store.menuIsOpen = !this.store.menuIsOpen 
+        }
     }
 }
 </script>
@@ -23,7 +28,7 @@ export default{
 <template>
     <header>
         <div class="container">
-            <AppNavbar :links="store.navigationLinks"/>
+            <AppNavbar :links="store.navigationLinks" :isOpen="store.menuIsOpen" @openMenu="openMenu"/>
             <AppJumbotron />
         </div>
     </header>

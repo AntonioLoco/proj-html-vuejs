@@ -305,5 +305,6 @@ export const store = reactive({
             name: "twitter",
             href: "/twitterlink"
         }
-    ]
+    ],
+    menuIsOpen: false,
 })
