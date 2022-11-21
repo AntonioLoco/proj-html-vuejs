@@ -40,12 +40,11 @@ export default{
     position: relative;
     
     &__item{
-        width: 300px!important;
+        width: 335px!important;
         padding: 0 2em;
 
         .project-card{
             width: 100%;
-            height: 250px;
             background-color: $background-white;
             border-radius: 20px;
             box-shadow: 5px 5px 11px 4px rgba(0,0,0,0.24);
@@ -71,7 +70,11 @@ export default{
                     margin-bottom: 0;
                 }
             }
-    
+
+            &:hover{
+                    background: $background-btn-orange;
+                    color: $text-white;
+            }
         }
     }
 
