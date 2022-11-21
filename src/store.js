@@ -287,5 +287,23 @@ export const store = reactive({
                 }
             ]
         }
+    ],
+    socialLinks: [
+        {
+            name: "instagram",
+            href: "/instagramlink"
+        },
+        {
+            name: "linkedin-in",
+            href: "/linkedinlink"
+        },
+        {
+            name: "facebook-f",
+            href: "/facebooklink"
+        },
+        {
+            name: "twitter",
+            href: "/twitterlink"
+        }
     ]
 })

@@ -1,17 +1,20 @@
 <script>
-import AppFooterLinks from './AppFooterLinks.vue';
+import AppFooterTop from './AppFooterTop.vue';
+import AppFooterBottom from './AppFooterBottom.vue';
 
 export default{
     name: "AppFooter",
     components: {
-        AppFooterLinks
+        AppFooterTop,
+        AppFooterBottom
     }
 }
 </script>
 
 <template>
     <footer>
-        <AppFooterLinks />
+        <AppFooterTop />
+        <AppFooterBottom />
     </footer>
 </template>
 

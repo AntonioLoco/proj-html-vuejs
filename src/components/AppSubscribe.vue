@@ -36,17 +36,12 @@ section{
     background-color: $background-light-grey;
 
     .container{
-        position: relative;
-        padding: 6rem;
         .form-subscribe{
             padding: 4em 1em;
             background: $background-btn-orange;
             border-radius: 20px;
             color: $text-white;
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 50%;
+            transform: translateY(50%);
     
             h2{
                 font-size: 2.2rem;
@@ -64,6 +59,10 @@ section{
                     padding: .7em 1em;
                     border-radius: 20px;
                     border-style: none;
+
+                    &:focus-visible{
+                        outline: none;
+                    }
                 }
     
                 a{

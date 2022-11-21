@@ -3,7 +3,7 @@ import AppLinks from './AppLinks.vue';
 import { store } from '../store';
 
 export default{
-    name: "AppFooterLinks",
+    name: "AppFooterTop",
     components: {
         AppLinks
     },
@@ -43,7 +43,7 @@ export default{
 @use "../styles/partials/variables" as *;
 
 section{
-    border-bottom: 1px solid $text-grey;
+    border-bottom: .1px solid rgba(184, 184, 184, 0.2);
 
     .container{
         padding-top: 13rem;
