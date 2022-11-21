@@ -83,6 +83,7 @@ export default{
             padding-top: 2em;
             padding-bottom: 1em;
             font-size: 1rem;
+            max-width: 350px;
         }
     }
 }

@@ -30,7 +30,7 @@ export default{
                 class="text-center"
             />
 
-            <div class="row row-cols-1 row-cols-lg-3 py-5">
+            <div class="row row-cols-1 row-cols-lg-3 pt-5">
                 <div 
                     class="col mb-5 mb-lg-0"
                     v-for="(testimonial, index) in store.testimonialList"

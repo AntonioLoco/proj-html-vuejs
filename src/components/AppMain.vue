@@ -6,6 +6,7 @@ import AppPortfolio from './AppPortfolio.vue';
 import AppPriceList from './AppPriceList.vue';
 import AppBlog from './AppBlog.vue';
 import AppTestimonials from './AppTestimonials.vue';
+import AppAdvertising from './AppAdvertising.vue';
 
 export default{
     name: "AppMain",
@@ -15,7 +16,8 @@ export default{
         AppPortfolio,
         AppPriceList,
         AppBlog,
-        AppTestimonials
+        AppTestimonials,
+        AppAdvertising
     }
 }
 </script>
@@ -28,6 +30,7 @@ export default{
         <AppPriceList />
         <AppBlog />
         <AppTestimonials />
+        <AppAdvertising />
     </main>
 </template>
 

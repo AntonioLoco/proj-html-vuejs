@@ -221,5 +221,27 @@ export const store = reactive({
             rating: 3,
             comment: "When, while lovely valley teems with vapour around meand meridian sun strikes the upper impenetrable foliage of my trees, and but a thousand "
         }
+    ],
+    AdvertisingList: [
+        {
+            name: "Golden",
+            imgUrl: "client-1"
+        },
+        {
+            name: "Sweety",
+            imgUrl: "client-2"
+        },
+        {
+            name: "Fastlane",
+            imgUrl: "client-3"
+        },
+        {
+            name: "Mighty Furnitures",
+            imgUrl: "client-4"
+        },
+        {
+            name: "Jack Roller",
+            imgUrl: "client-5"
+        }
     ]
 })
