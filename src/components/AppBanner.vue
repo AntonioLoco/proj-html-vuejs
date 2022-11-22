@@ -5,7 +5,7 @@ import AppButton from './AppButton.vue';
 export default{
     name: "AppBanner",
     components: {
-        AppButton
+        AppButton,
     }
 }
 </script>
@@ -13,10 +13,11 @@ export default{
 <template>
     <!-- Banner -->
     <section>
-        <div class="container py-5">
-            <div class="row row-cols-1 row-cols-lg-2 align-items-center pb-5">
-                <div class="col mb-3 mb-lg-0 d-flex justify-content-center justify-content-lg-start">
-                    <img src="../assets/img/men-data.png" alt="Banner photo">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-2 align-items-center justify-content-center justify-content-lg-between pb-5">
+                <div class="col mb-3 mb-lg-0 position-relative card-image">
+                    <img src="../assets/img/men-data.png" alt="Banner photo" id="front-image">
+                    <img src="../assets/img/nemoodar.png" alt="Back Photo" id="back-image">
                 </div>
                 <div class="col pe-5">
                     <h5 class="fs-6 fw-light">Start your Project</h5>
@@ -39,9 +40,21 @@ section{
     background: $background-header;
     color: $text-white;
 
+    .card-image{
+        max-width: 350px;
+    }
     .container{
-        img{
-            max-width: 70%;
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+
+        #front-image{
+            position: relative;
+            z-index: 10;
+        }
+        #back-image{
+            position: absolute;
+            top: -50px;
+            left: 0;
         }
 
         p{
