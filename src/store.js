@@ -79,12 +79,6 @@ export const store = reactive({
             href: "/mockup",
             img: "project-mockup",
             description: "Digital Experience"
-        },
-        {
-            name: "Satisfy Poster",
-            href: "/satisfy",
-            img: "project-satisfy",
-            description: "Branding Strategy"
         }
     ],
     productList: [
