@@ -1,6 +1,6 @@
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Pagination } from "swiper";
+import { Pagination, Navigation } from "swiper";
 
 export default{
     name: "AppSlider",
@@ -19,7 +19,7 @@ export default{
     },
     setup(){
         return{
-            modules: [Pagination],
+            modules: [Pagination, Navigation],
         }
     }
 }
@@ -29,6 +29,8 @@ export default{
     <swiper
         :slidesPerView="1"
         :spaceBetween="10"
+        :rewind="true" 
+        :navigation="true"
         :pagination="{
             clickable: true,
         }"
@@ -103,9 +105,11 @@ export default{
     }
 }
 
-.swiper{
+.mySwiper{
+    overflow: visible;
     padding: 2em 0;
 }
+
 .swiper-slide{
     display: flex;
     justify-content: center;
