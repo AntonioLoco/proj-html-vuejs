@@ -19,15 +19,17 @@ export default{
             <a class="navbar-brand">
                 <img src="../assets/img/white-logo-2.png" alt="Logo">
             </a>
-            <button class="hamburger-btn d-lg-none" @click="$emit('openMenu')">
-                <i class="fa-solid fa-bars"></i>
+            <button class="hamburger-btn d-lg-none" @click="$emit('toggleMenu')">
+                <i v-if="!isOpen" class="fa-solid fa-bars"></i>
+                <i v-else class="fa-solid fa-xmark"></i>
             </button>
-            <div class="navbar-navigation mt-3 mt-lg-0 d-lg-flex" :class="{'d-none' : !isOpen}">
+            <div class="navbar-navigation d-lg-flex" :class="{'d-none' : !isOpen}">
                 <ul class="navbar-link">
                     <li v-for="(link,index) in links" :key="index">
                         <a 
                             :href="link.href"
                             :class="{ 'active' : link.active}"
+                            @click="$emit('linkClicked')"
                         >
                             {{link.name}}
                         </a>
@@ -68,17 +70,33 @@ export default{
         font-size: 1.5rem;
         border: none;
         background: none;
+        position: relative;
+        z-index: 999;
     }
 
 }
 
 @media screen and (max-width: 991px) {
     .navbar-navigation{
-        display: block;
         width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $background-header;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 900;
 
         .navbar-link{
             display: block;
+
+            li{
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+            }
         }
     }
 }
