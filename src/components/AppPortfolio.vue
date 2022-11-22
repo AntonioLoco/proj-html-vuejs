@@ -39,7 +39,7 @@ export default{
 
 section{
     overflow-x: hidden;
-    padding-bottom: 5em;
+    padding-bottom: 3rem;
     background-color: $background-light-grey;
 }
 </style>

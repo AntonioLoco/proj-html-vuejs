@@ -1,6 +1,7 @@
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination, Navigation } from "swiper";
+import AppCardProject from "./AppCardProject.vue";
 
 export default{
     name: "AppSlider",
@@ -9,14 +10,10 @@ export default{
         active: Number
     },
     components: {
-        Swiper,
-        SwiperSlide
-    },  
-    methods: {
-        getImage(imagePath){
-            return new URL(imagePath, import.meta.url).href
-        }
-    },
+    Swiper,
+    SwiperSlide,
+    AppCardProject
+},  
     setup(){
         return{
             modules: [Pagination, Navigation],
@@ -62,14 +59,8 @@ export default{
                 <i class="fa-solid fa-arrow-right"></i>
             </div>
         </div>
-        <swiper-slide v-for="(project,index) in projects" :key="index">
-            <div class="carousel-card"> 
-                <img :src="getImage(`../assets/img/${project.img}.jpg`)" :alt="project.name">
-                <div class="carousel-card-description">
-                    <h3>{{project.name}}</h3>
-                    <p>{{project.description}}</p>
-                </div>
-            </div>
+        <swiper-slide v-for="(item,index) in projects" :key="index">
+            <AppCardProject :project="item"/>
         </swiper-slide>
     </swiper>
 
@@ -80,45 +71,10 @@ export default{
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
 
-.carousel-card{
-    display: inline-block;
-    width: 300px;
-    background-color: $background-white;
-    border-radius: 20px;
-    box-shadow: 5px 5px 11px 4px rgba(0,0,0,0.24);
-
-    img{
-        max-width: 100%;
-        border-radius: 20px;
-    }
-
-    &-description{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.2em 1em;
-
-        h3{
-            font-size: 1rem;
-            margin-bottom: 0;
-        }
-
-        p{
-            font-size: .8rem;
-            margin-bottom: 0;
-        }
-    }
-
-    &:hover{
-            background: $background-btn-orange;
-            color: $text-white;
-            transition: all .2s ease-in-out;
-    }
-}
-
 .mySwiper{
     overflow: visible;
-    padding: 2em 0;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 
     &-navigation{
         position: absolute;
@@ -140,10 +96,10 @@ export default{
             justify-content: center;
         }
     }
-}
 
-.swiper-slide{
-    display: flex;
-    justify-content: center;
+    .swiper-slide{
+        display: flex;
+        justify-content: center;
+    }
 }
 </style>

@@ -41,3 +41,12 @@ header{
     background: $background-header;
     color: $text-white;
 }
+
+// Bullet Slider
+.swiper-pagination{
+    bottom: 0!important;
+    
+    .swiper-pagination-bullet-active{
+        background-color: $text-orange;
+    }
+}
