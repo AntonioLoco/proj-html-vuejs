@@ -9,17 +9,12 @@ export default{
     },
     components: {
         AppButton
-    },
-    computed: {
-        getColorButton(){
-            return this.color === "orange" ? "white" : "orange"
-        }
     }
 }
 </script>
 
 <template>
-    <div class="card-pricing" :class="color">
+    <div class="card-pricing">
         <div class="title mb-3">
             <h2 class="fs-3 fw-semibold">{{product.name}}</h2>
             <h4 class=" fw-normal">{{product.type.toUpperCase()}}</h4>
@@ -38,7 +33,7 @@ export default{
         <div class="background">
             <span>{{product.price}}</span>
         </div>
-        <AppButton name="Order Now &#8594" href="/ordernow" :color="getColorButton" class="mb-2"/>
+        <AppButton name="Order Now &#8594" href="/ordernow" color="orange" class="mb-2 app-button"/>
     </div>
 </template>
 
@@ -54,13 +49,19 @@ export default{
     position: relative;
     overflow: hidden;
     box-shadow: 6px 5px 21px 0px rgba(0,0,0,0.48);
-    &.white{
-        background-color: $background-light-grey;
-        color: $text-black;
-    }
-    &.orange{
+    background-color: $background-light-grey;
+    color: $text-black;
+    transition: all .2s ease-out;
+
+    &:hover{
         background: $background-card-orange;
         color: $text-white;
+
+    }
+
+    &:hover .app-button{
+        background: $background-white;
+        color: $text-orange;
     }
 
     .title{
