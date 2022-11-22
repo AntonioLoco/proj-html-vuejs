@@ -13,13 +13,13 @@ export default{
 </script>
 
 <template>
-    <div class="project-card"> 
+    <a :href="project.href" class="project-card"> 
         <img :src="getImage(`../assets/img/${project.img}.jpg`)" :alt="project.name">
         <div class="project-card-description">
             <h3>{{project.name}}</h3>
             <p>{{project.description}}</p>
         </div>
-    </div>
+    </a>
 </template>
 
 <style lang="scss" scoped>

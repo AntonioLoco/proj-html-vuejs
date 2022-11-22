@@ -31,7 +31,7 @@ export default{
                 class="text-center"
             />
 
-            <div class="row row-cols-1 row-cols-lg-3 py-5">
+            <div class="row row-cols-1 row-cols-lg-3 pt-5">
                 <div class="col d-flex align-items-center justify-content-center d-lg-block mb-5 mb-lg-0" v-for="(product, index) in store.productList" :key="index">
                     <AppCardPrice :product="product" :color="(index % 2) === 0 ? 'white' : 'orange'"/>
                 </div>
