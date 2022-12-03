@@ -6,8 +6,7 @@ import AppCardProject from "./AppCardProject.vue";
 export default{
     name: "AppSlider",
     props: {
-        projects: Object,
-        active: Number
+        projects: Object
     },
     components: {
     Swiper,
@@ -60,12 +59,9 @@ export default{
             </div>
         </div>
         <swiper-slide v-for="(item,index) in projects" :key="index">
-            <AppCardProject :project="item"/>
+            <AppCardProject :project="item" v-motion-pop-visible-once />
         </swiper-slide>
     </swiper>
-
-
-
 </template>
 
 <style lang="scss" scoped>

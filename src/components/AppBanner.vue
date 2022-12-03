@@ -15,11 +15,11 @@ export default{
     <section>
         <div class="container">
             <div class="row row-cols-1 row-cols-lg-2 align-items-center justify-content-center justify-content-lg-between pb-5">
-                <div class="col mb-3 mb-lg-0 position-relative card-image">
+                <div class="col mb-3 mb-lg-0 position-relative card-image" v-motion-roll-visible-once-left>
                     <img src="../assets/img/men-data.png" alt="Banner photo" id="front-image">
                     <img src="../assets/img/nemoodar.png" alt="Back Photo" id="back-image">
                 </div>
-                <div class="col pe-5">
+                <div class="col pe-5" v-motion-roll-visible-once-right>
                     <h5 class="fs-6 fw-light">Start your Project</h5>
                     <h1 class="fs-1 fw-bold">Grow Your Business</h1>
                     <h3 class="fs-1 fw-semibold">With Our Strategy</h3>

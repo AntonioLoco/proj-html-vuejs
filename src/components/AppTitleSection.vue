@@ -11,7 +11,10 @@ export default{
 </script>
 
 <template>
-    <div class="title-section" :class="color">
+    <div 
+        class="title-section" 
+        :class="color"
+    >
         <h5 class="fs-6 fw-normal">{{section}}</h5>
         <h2 class="fs-1 fw-bold">
             {{ title.split(' ')[0]  + " "}}<span class="fw-normal" v-for="number in title.split(' ').length - 1" :key="number">{{title.split(' ')[number] + " "}}</span></h2>

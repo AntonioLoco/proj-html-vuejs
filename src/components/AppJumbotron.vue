@@ -14,7 +14,8 @@ export default{
     <!-- Jumbotron -->
     <div class="jumbotron">
         <div class="row row-cols-1 row-cols-lg-2 align-items-center pb-5">
-            <div class="col order-1 order-lg-0 pe-5">
+            <div class="col order-1 order-lg-0 pe-5" 
+            >
                 <h1 class="fs-1 fw-bold">Business Planning</h1>
                 <h3 class="fs-2 fw-semibold">Digital Technology</h3>
                 <h2 class="fs-1 fw-bold">Modern Solution!</h2>

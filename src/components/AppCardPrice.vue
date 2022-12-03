@@ -4,8 +4,7 @@ import AppButton from './AppButton.vue';
 export default{
     name: "AppCardPrice",
     props: {
-        product: Object,
-        color: String
+        product: Object
     },
     components: {
         AppButton

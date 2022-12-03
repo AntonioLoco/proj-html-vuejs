@@ -25,6 +25,7 @@ export default{
                 class="col mb-5 mb-lg-0"
                 v-for="(society,index) in store.AdvertisingList"
                 :key="index"
+                v-motion-roll-visible-once-bottom
             >
                 <img :src="getImagePath(`../assets/img/${society.imgUrl}.png`)" :alt="society.name">
             </div>

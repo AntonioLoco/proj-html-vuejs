@@ -36,7 +36,7 @@ export default{
                     v-for="(testimonial, index) in store.testimonialList"
                     :key="index"
                 >
-                    <AppTestimonialCard :testimonial="testimonial"/>
+                    <AppTestimonialCard :testimonial="testimonial" v-motion-slide-visible-once-top/>
                 </div>
             </div>
         </div>

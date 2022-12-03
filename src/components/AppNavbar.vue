@@ -30,6 +30,7 @@ export default{
                             :href="link.href"
                             :class="{ 'active' : link.active}"
                             @click="$emit('linkClicked')"
+                            v-motion-roll-bottom
                         >
                             {{link.name}}
                         </a>

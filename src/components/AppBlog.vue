@@ -36,7 +36,7 @@ export default{
                     :key="index"
                     :class="post.img ? 'col-12 col-xl-6 mb-4' : 'col-6 col-xl-3' "
                 >
-                    <AppCardBlogs :post="post"/>
+                    <AppCardBlogs :post="post" v-motion-slide-visible-once-top/>
                 </div>
             </div>
         </div>

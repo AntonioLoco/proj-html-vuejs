@@ -40,7 +40,7 @@ export default{
                     v-for="(service,index) in store.ourServices"
                     :key="index"
                 >
-                    <AppCardService :service="service" />
+                    <AppCardService :service="service"  v-motion-pop-visible-once/>
                 </div>
             </div>
 
